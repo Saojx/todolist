@@ -2,7 +2,7 @@
 <table>
   <tr *ngFor="let row of rows;let rowIdx = index">
     <td *ngFor="let col of columns;let colIdx = index">
-      <input #inputs nz-input type="text" (keyup.arrowdown)="focusDown(rowIdx, colIdx)"
+      <input #inputs nz-input type="text" (focus)="focusChange(rowIdx, colIdx)" (keyup.arrowdown)="focusDown(rowIdx, colIdx)"
         (keyup.arrowup)="focusUp(rowIdx, colIdx)" (keyup.arrowright)="focusRight(rowIdx, colIdx)"
         (keyup.arrowleft)="focusLeft(rowIdx, colIdx)">
     </td>
