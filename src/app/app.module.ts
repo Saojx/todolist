@@ -14,16 +14,19 @@ import { NzMessageModule } from 'ng-zorro-antd/message';
 import { NzSwitchModule } from 'ng-zorro-antd/switch';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzPopconfirmModule } from 'ng-zorro-antd/popconfirm';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TableComponent } from './src/app/pages/table/table.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NzMessageModule,
     NzSwitchModule,
     NzIconModule,
-    NzPopconfirmModule
+    NzPopconfirmModule,
+    NzTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

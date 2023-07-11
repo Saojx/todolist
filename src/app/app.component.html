@@ -1,10 +1,11 @@
-  <div class="title">
+<!--   <div class="title">
     {{title}}
   </div>
   <div>
     <nz-card class="card" [nzBordered]="false" nzTitle="Create a new todoe">
       <nz-input-group nzSearch nzSize="large" [nzAddOnAfter]="suffixIconButton">
-        <input type="text" style="margin-right: 10px;" nz-input placeholder="what needs to be done?" [(ngModel)]="todo" />
+        <input type="text" style="margin-right: 10px;" nz-input placeholder="what needs to be done?"
+          [(ngModel)]="todo" />
       </nz-input-group>
       <ng-template #suffixIconButton>
         <button nz-button nzType="primary" nzSize="large" nzSearch (click)="addTodo()">add todo</button>
@@ -23,7 +24,8 @@
             </nz-list-item-meta>
             <ul nz-list-item-actions>
               <nz-list-item-action>
-                <nz-switch [(ngModel)]="item.status" nzCheckedChildren="√" nzUnCheckedChildren="×" (ngModelChange)="switch()"></nz-switch>
+                <nz-switch [(ngModel)]="item.status" nzCheckedChildren="√" nzUnCheckedChildren="×"
+                  (ngModelChange)="switch()"></nz-switch>
               </nz-list-item-action>
               <nz-list-item-action>
                 <button nz-popconfirm nzPopconfirmTitle="Are you sure you want to delete?"
@@ -37,7 +39,9 @@
       <ng-template #elseTemplate>
         <div style="color: gainsboro;text-align: center;">There's nothing to do :(</div>
       </ng-template>
-      <nz-pagination class="list-pagination" [nzTotal]="todoList.length"
-        (nzPageIndexChange)="change($event)"></nz-pagination>
+      <nz-pagination class="list-pagination" [nzTotal]="todoList.length" (nzPageIndexChange)="change($event)">
+      </nz-pagination>
     </nz-card>
   </div>
+ -->
+ <app-table></app-table>
